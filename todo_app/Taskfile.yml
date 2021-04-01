@@ -1,0 +1,10 @@
+version: "3"
+
+tasks:
+  build-app:
+    cmds:
+      - go build -o todo_app.exe main.go
+    silent: true
+  build-start:
+    cmds:
+      - go build -o todo_app.exe main.go && ./todo_app.exe
